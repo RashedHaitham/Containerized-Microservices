@@ -1,0 +1,12 @@
+com\example\enterBook\EnterBookApplication.class
+com\example\enterBook\model\User.class
+com\example\enterBook\service\BookService.class
+com\example\enterBook\service\AuthenticationService.class
+com\example\enterBook\interceptors\TokenInterceptor.class
+com\example\enterBook\controllers\AuthenticationController.class
+com\example\enterBook\repository\BookRepository.class
+com\example\enterBook\configuration\WebConfig.class
+com\example\enterBook\model\Genre.class
+com\example\enterBook\service\AnalyticsService.class
+com\example\enterBook\controllers\BookController.class
+com\example\enterBook\model\Book.class

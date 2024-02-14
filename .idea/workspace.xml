@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a6fd83e-97af-4cca-a251-01b1f07e2de9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\rashe\Desktop\apache-maven-3.9.4" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2c7wNxZVixqnXbVk61ysgEWpdNw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.AnalyticsService/Dockerfile.executor": "Run",
+    "Docker.BookResult/Dockerfile.executor": "Run",
+    "Docker.ShowGameResult/Dockerfile.executor": "Run",
+    "Docker.authentication-service/Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml.analytics-service: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.authenticationservice: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.enterbook: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.entervideogame: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.mongodb: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.mysqldb: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.show-result: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Docker.enterBook/Dockerfile.executor": "Run",
+    "Docker.enterVideoGame/Dockerfile.executor": "Run",
+    "JUnit.ShowGameResultApplicationTests.contextLoads.executor": "Run",
+    "Maven.AnalyticsService [clean].executor": "Run",
+    "Maven.AnalyticsService [install].executor": "Run",
+    "Maven.BookResult [clean].executor": "Run",
+    "Maven.BookResult [install].executor": "Run",
+    "Maven.ShowGameResult [clean].executor": "Run",
+    "Maven.ShowGameResult [install].executor": "Run",
+    "Maven.authentication-service [clean].executor": "Run",
+    "Maven.authentication-service [install].executor": "Run",
+    "Maven.enterBook [clean].executor": "Run",
+    "Maven.enterBook [compile].executor": "Run",
+    "Maven.enterBook [install].executor": "Run",
+    "Maven.enterVideoGame [clean].executor": "Run",
+    "Maven.enterVideoGame [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AnalyticsServiceApplication.executor": "Run",
+    "Spring Boot.AuthenticationServiceApplication.executor": "Run",
+    "Spring Boot.EnterVideoGameApplication.executor": "Run",
+    "Spring Boot.ShowGameResultApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rashe/Desktop/BookStoreMicroservice/ShowResult/BookResult/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rashe\Desktop\BookStoreMicroservice\ShowResult\BookResult\src\main\resources" />
+      <recent name="C:\Users\rashe\Desktop\BookStoreMicroservice\enterVideoGame\enterVideoGame\src\main\resources" />
+      <recent name="C:\Users\rashe\Desktop\videoGameMicroservice" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+    <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="AnalyticsService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.AnalyticsService.AnalyticsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="authentication-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authenticationservice.AuthenticationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnterBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="enterBook" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.enterBook.EnterBookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShowBookResultApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="BookResult" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.BookResult.ShowBookResultApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShowResultApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="BookResult" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ShowGameResult.ShowGameResultApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnalyticsService/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="AnalyticsService/AnalyticsService/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="BookResult/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="ShowResult/BookResult/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="authentication-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="authentication-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="enterBook/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="enterBook/enterBook/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.AnalyticsService/Dockerfile" />
+      <item itemvalue="Docker.BookResult/Dockerfile" />
+      <item itemvalue="Docker.authentication-service/Dockerfile" />
+      <item itemvalue="Docker.enterBook/Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
+      <item itemvalue="Spring Boot.AuthenticationServiceApplication" />
+      <item itemvalue="Spring Boot.EnterBookApplication" />
+      <item itemvalue="Spring Boot.ShowResultApplication" />
+      <item itemvalue="Spring Boot.ShowBookResultApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.enterBook/Dockerfile" />
+        <item itemvalue="Docker.authentication-service/Dockerfile" />
+        <item itemvalue="Docker.AnalyticsService/Dockerfile" />
+        <item itemvalue="Docker.BookResult/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a6fd83e-97af-4cca-a251-01b1f07e2de9" name="Changes" comment="" />
+      <created>1707475888695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707475888695</updated>
+      <workItem from="1707476435126" duration="3690000" />
+      <workItem from="1707481675055" duration="402000" />
+      <workItem from="1707482512377" duration="18978000" />
+      <workItem from="1707507083213" duration="11893000" />
+      <workItem from="1707572572718" duration="541000" />
+      <workItem from="1707574839735" duration="72000" />
+      <workItem from="1707574967443" duration="814000" />
+      <workItem from="1707576092473" duration="1431000" />
+      <workItem from="1707577564925" duration="1478000" />
+      <workItem from="1707579284811" duration="13000" />
+      <workItem from="1707781113314" duration="8055000" />
+      <workItem from="1707792202759" duration="21000" />
+      <workItem from="1707838773324" duration="1074000" />
+      <workItem from="1707859333030" duration="4443000" />
+      <workItem from="1707864735782" duration="7129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

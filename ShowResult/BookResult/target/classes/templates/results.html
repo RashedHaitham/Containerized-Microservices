@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics Chart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+<div class="flex items-center justify-center min-h-screen">
+  <div class="p-6 bg-white shadow-md rounded-lg">
+    <div id="lastUpdated" class="text-sm text-gray-600" style="margin-bottom:1rem"></div>
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold text-gray-700">Analysis of books</h2>
+      <div class="text-right"> <!-- Container for button and updated_at text -->
+        <button onclick="showDetails()" class="bg-blue-500 text-white px-4 py-2 rounded shadow">
+          <i class="fas fa-info-circle"></i> Details
+        </button>
+      </div>
+    </div>
+    <canvas id="myChart" width="400" height="200"></canvas>
+  </div>
+</div>
+
+<script th:inline="javascript">
+  var analyticsList = [[${analyticsList}]];
+
+  var maxPrices = analyticsList.map(a => a.maxPrice);
+  var minPrices = analyticsList.map(a => a.minPrice);
+  var avgPrices = analyticsList.map(a => a.averagePrice);
+  var bookCounts = analyticsList.map(a => a.numberOfBooks);
+  var lastUpdated = analyticsList.length > 0 ? analyticsList[0].lastUpdated : 'N/A';  var Analysis = {
+    updated_at: new Date().toLocaleDateString("en-US", {
+      year: 'numeric', month: 'long', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true
+    })
+  };
+
+  document.getElementById('lastUpdated').textContent = `Last updated on ${lastUpdated}`;
+
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Min Price', 'Max Price', 'Avg Price', 'NO.Books'],
+      datasets: [{
+        label: 'Book Statistics',
+        data: [maxPrices[0], minPrices[0], avgPrices[0], bookCounts[0]], // Using first set of data
+        backgroundColor: [
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+        ],
+        borderColor: [
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  function showDetails() {
+    var data = myChart.data.datasets[0].data;
+    var details = 'Minimum Price: ' + data[0] + '\n'
+            + 'Maximum Price: ' + data[1] + '\n'
+            + 'Average Price: ' + data[2] + '\n'
+            + 'Number Of Books: ' + data[3];
+    alert(details);
+  }
+</script>
+</body>
+</html>

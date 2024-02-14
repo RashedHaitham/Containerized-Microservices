@@ -1,0 +1,10 @@
+com\example\BookResult\Model\User.class
+com\example\BookResult\Interceptors\TokenInterceptor.class
+com\example\BookResult\Controllers\AuthenticationController.class
+com\example\BookResult\WebConfig\WebConfig.class
+com\example\BookResult\ShowBookResultApplication.class
+com\example\BookResult\Repository\AnalyticsRepository.class
+com\example\BookResult\Controllers\ShowVideoGameController.class
+com\example\BookResult\Model\Analytics.class
+com\example\BookResult\Service\ShowBookService.class
+com\example\BookResult\Service\AuthenticationService.class

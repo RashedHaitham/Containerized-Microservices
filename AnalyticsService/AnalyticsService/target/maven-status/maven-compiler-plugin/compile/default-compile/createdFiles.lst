@@ -1,0 +1,5 @@
+com\example\AnalyticsService\Repository\AnalyticsRepository.class
+com\example\AnalyticsService\AnalyticsService\AnalyticsService.class
+com\example\AnalyticsService\Controllers\AnalyticsController.class
+com\example\AnalyticsService\Model\Analytics.class
+com\example\AnalyticsService\AnalyticsServiceApplication.class

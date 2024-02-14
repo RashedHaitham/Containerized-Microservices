@@ -1,0 +1,5 @@
+com\example\authenticationservice\Model\User.class
+com\example\authenticationservice\Services\AuthenticationService.class
+com\example\authenticationservice\AuthenticationServiceApplication.class
+com\example\authenticationservice\Repository\UserRepository.class
+com\example\authenticationservice\Controllers\AuthenticationController.class
