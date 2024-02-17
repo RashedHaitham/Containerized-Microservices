@@ -44,7 +44,7 @@
   var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Min Price', 'Max Price', 'Avg Price', 'NO.Books'],
+      labels: ['Max Price', 'Min Price', 'Avg Price', 'NO.Books'],
       datasets: [{
         label: 'Book Statistics',
         data: [maxPrices[0], minPrices[0], avgPrices[0], bookCounts[0]], // Using first set of data
@@ -74,8 +74,8 @@
 
   function showDetails() {
     var data = myChart.data.datasets[0].data;
-    var details = 'Minimum Price: ' + data[0] + '\n'
-            + 'Maximum Price: ' + data[1] + '\n'
+    var details = 'Maximum Price: ' + data[0] + '\n'
+            + 'Minimum Price: ' + data[1] + '\n'
             + 'Average Price: ' + data[2] + '\n'
             + 'Number Of Books: ' + data[3];
     alert(details);
