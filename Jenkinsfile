@@ -50,15 +50,14 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                // Check if the bookstoremicroservice container is running and stop it, ignoring errors
-                bat 'docker stop bookstoremicroservice || exit 0'
-                bat 'docker rm bookstoremicroservice || exit 0'
-                // Proceed with deployment
-                bat 'docker-compose -f docker-compose.yml down'
-                bat 'docker-compose -f docker-compose.yml up -d'
-            }
+            // Check if the bookstoremicroservice container is running and stop it
+            bat 'docker stop bookstoremicroservice || true'
+            bat 'docker rm bookstoremicroservice || true'
+            // Proceed with deployment
+            bat 'docker-compose -f docker-compose.yml down'
+            bat 'docker-compose -f docker-compose.yml up -d'            }
         }
-
+    }
 
     post {
         always {
