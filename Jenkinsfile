@@ -6,6 +6,10 @@ pipeline {
         maven 'Maven 3.9.6'
     }
 
+    environment {
+        JAVA_HOME = "${tool 'JDK 21'}"
+    }
+
     stages {
         stage('Checkout') {
             steps {
