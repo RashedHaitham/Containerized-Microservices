@@ -5,10 +5,6 @@ pipeline {
         maven 'Maven 3.9.6'
     }
 
-    environment {
-        // Define any environment variables needed for Maven or Docker
-    }
-
     stages {
         stage('Checkout') {
             steps {
