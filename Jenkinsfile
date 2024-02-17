@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent none
 
     tools {
         jdk 'JDK 21'
@@ -54,8 +54,10 @@ pipeline {
 
     post {
         always {
-            bat 'docker-compose -f docker-compose.yml down'
-            bat 'docker system prune -f'
+           node {
+              bat 'docker-compose -f docker-compose.yml down'
+              bat 'docker system prune -f'
+           }
         }
     }
 }
