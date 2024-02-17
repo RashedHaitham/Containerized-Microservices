@@ -50,12 +50,12 @@ pipeline {
 
         stage('Deploy') {
             steps {
-            // Check if the bookstoremicroservice container is running and stop it
-            bat 'docker stop bookstoremicroservice || true'
-            bat 'docker rm bookstoremicroservice || true'
-            // Proceed with deployment
-            bat 'docker-compose -f docker-compose.yml down'
-            bat 'docker-compose -f docker-compose.yml up -d'            }
+             // Using PowerShell to ignore errors
+                    bat 'powershell -Command "docker stop bookstoremicroservice; if ($LASTEXITCODE -ne 0) { Write-Output \'Container stop command may have failed; ignoring.\' }"'
+                    bat 'powershell -Command "docker rm bookstoremicroservice; if ($LASTEXITCODE -ne 0) { Write-Output \'Container remove command may have failed; ignoring.\' }"'
+                    // Proceed with deployment
+                    bat 'docker-compose -f docker-compose.yml down'
+                    bat 'docker-compose -f docker-compose.yml up -d'          }
         }
     }
 
