@@ -19,36 +19,37 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                sh 'mvn clean install -f ShowResult/BookResult/pom.xml'
-                sh 'mvn clean install -f enterBook/enterBook/pom.xml'
-                sh 'mvn clean install -f AnalyticsService/AnalyticsService/pom.xml'
-                sh 'mvn clean install -f authentication-service/pom.xml'
+                sh 'mvn clean install -f ShowResult/BookResult/pom.xml &&
+                mvn clean install -f enterBook/enterBook/pom.xml &&
+                mvn clean install -f AnalyticsService/AnalyticsService/pom.xml &&
+                mvn clean install -f authentication-service/pom.xml'
             }
         }
 
         stage('Pull Database Images') {
-            steps {
-                sh 'docker-compose -f docker-compose.yml pull mongodb mysqldb'
-            }
-        }
+                    steps {
+                        sh 'docker-compose -f docker-compose.yml pull mongodb mysqldb'
+                    }
+                }
 
-        stage('Build Docker Images') {
-            steps {
-                sh 'docker-compose -f docker-compose.yml build enterbook authenticationservice analytics-service show-result'
-            }
-        }
+                stage('Build Docker Images') {
+                    steps {
+                        sh 'docker-compose -f docker-compose.yml build enterbook authenticationservice analytics-service show-result'
+                    }
+                }
 
-        stage('Deploy') {
-            steps {
-                sh 'docker-compose -f docker-compose.yml up -d'
-            }
+                stage('Deploy') {
+                    steps {
+                        sh 'docker-compose -f docker-compose.yml up -d'
+                    }
+                }
         }
     }
 
     post {
-        always {
-            sh 'docker-compose -f docker-compose.yml down'
-            sh 'docker system prune -f --volumes'
-        }
-    }
+           always {
+               sh 'docker-compose -f docker-compose.yml down'
+               sh 'docker system prune -f --volumes'
+           }
+       }
 }
