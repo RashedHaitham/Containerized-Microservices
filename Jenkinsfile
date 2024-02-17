@@ -19,10 +19,7 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                sh 'mvn clean install -f ShowResult/BookResult/pom.xml &&
-                mvn clean install -f enterBook/enterBook/pom.xml &&
-                mvn clean install -f AnalyticsService/AnalyticsService/pom.xml &&
-                mvn clean install -f authentication-service/pom.xml'
+                sh 'mvn clean install -f ShowResult/BookResult/pom.xml && mvn clean install -f enterBook/enterBook/pom.xml && mvn clean install -f AnalyticsService/AnalyticsService/pom.xml && mvn clean install -f authentication-service/pom.xml'
             }
         }
 
