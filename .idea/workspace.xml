@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a6fd83e-97af-4cca-a251-01b1f07e2de9" name="Changes" comment="" />
+    <list default="true" id="7a6fd83e-97af-4cca-a251-01b1f07e2de9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -33,63 +38,66 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2c7wNxZVixqnXbVk61ysgEWpdNw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Docker.AnalyticsService/Dockerfile.executor": "Run",
-    "Docker.BookResult/Dockerfile.executor": "Run",
-    "Docker.ShowGameResult/Dockerfile.executor": "Run",
-    "Docker.authentication-service/Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.analytics-service: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.authenticationservice: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.enterbook: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.entervideogame: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongodb: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mysqldb: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.show-result: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Docker.enterBook/Dockerfile.executor": "Run",
-    "Docker.enterVideoGame/Dockerfile.executor": "Run",
-    "JUnit.ShowGameResultApplicationTests.contextLoads.executor": "Run",
-    "Maven.AnalyticsService [clean].executor": "Run",
-    "Maven.AnalyticsService [install].executor": "Run",
-    "Maven.BookResult [clean].executor": "Run",
-    "Maven.BookResult [install].executor": "Run",
-    "Maven.ShowGameResult [clean].executor": "Run",
-    "Maven.ShowGameResult [install].executor": "Run",
-    "Maven.authentication-service [clean].executor": "Run",
-    "Maven.authentication-service [install].executor": "Run",
-    "Maven.enterBook [clean].executor": "Run",
-    "Maven.enterBook [compile].executor": "Run",
-    "Maven.enterBook [install].executor": "Run",
-    "Maven.enterVideoGame [clean].executor": "Run",
-    "Maven.enterVideoGame [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.AnalyticsServiceApplication.executor": "Run",
-    "Spring Boot.AuthenticationServiceApplication.executor": "Run",
-    "Spring Boot.EnterVideoGameApplication.executor": "Run",
-    "Spring Boot.ShowGameResultApplication.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rashe/Desktop/BookStoreMicroservice/ShowResult/BookResult/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Docker.AnalyticsService/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.BookResult/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.ShowGameResult/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.authentication-service/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.analytics-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.authenticationservice: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.enterbook: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.entervideogame: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mysqldb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.show-result: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.enterBook/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.enterVideoGame/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShowGameResultApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AnalyticsService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AnalyticsService [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BookResult [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BookResult [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ShowGameResult [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ShowGameResult [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.authentication-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.authentication-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.enterBook [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.enterBook [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.enterBook [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.enterVideoGame [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.enterVideoGame [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AnalyticsServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthenticationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EnterVideoGameApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ShowGameResultApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rashe/Desktop/BookStoreMicroservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rashe\Desktop\BookStoreMicroservice\ShowResult\BookResult\src\main\resources" />
@@ -106,7 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.show-result: Compose Deployment">
     <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="AnalyticsService" />
@@ -155,14 +163,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="BookResult/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="ShowResult/BookResult/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -191,6 +191,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.show-result: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="show-result" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="enterBook/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -201,23 +214,23 @@
     </configuration>
     <list>
       <item itemvalue="Docker.AnalyticsService/Dockerfile" />
-      <item itemvalue="Docker.BookResult/Dockerfile" />
       <item itemvalue="Docker.authentication-service/Dockerfile" />
-      <item itemvalue="Docker.enterBook/Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.show-result: Compose Deployment" />
+      <item itemvalue="Docker.enterBook/Dockerfile" />
       <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
       <item itemvalue="Spring Boot.AuthenticationServiceApplication" />
       <item itemvalue="Spring Boot.EnterBookApplication" />
-      <item itemvalue="Spring Boot.ShowResultApplication" />
       <item itemvalue="Spring Boot.ShowBookResultApplication" />
+      <item itemvalue="Spring Boot.ShowResultApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.show-result: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.enterBook/Dockerfile" />
         <item itemvalue="Docker.authentication-service/Dockerfile" />
         <item itemvalue="Docker.AnalyticsService/Dockerfile" />
-        <item itemvalue="Docker.BookResult/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +263,13 @@
       <workItem from="1707792202759" duration="21000" />
       <workItem from="1707838773324" duration="1074000" />
       <workItem from="1707859333030" duration="4443000" />
-      <workItem from="1707864735782" duration="7129000" />
+      <workItem from="1707864735782" duration="13893000" />
+      <workItem from="1707936274093" duration="77000" />
+      <workItem from="1707936383599" duration="49000" />
+      <workItem from="1707937519115" duration="57000" />
+      <workItem from="1707937615948" duration="48000" />
+      <workItem from="1707937704703" duration="32000" />
+      <workItem from="1708158774314" duration="2140000" />
     </task>
     <servers />
   </component>
