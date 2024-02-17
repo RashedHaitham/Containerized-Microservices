@@ -19,8 +19,18 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                sh 'mvn clean install -f ShowResult/BookResult/pom.xml && mvn clean install -f enterBook/enterBook/pom.xml && mvn clean install -f AnalyticsService/AnalyticsService/pom.xml && mvn clean install -f authentication-service/pom.xml'
-            }
+            dir('ShowResult/BookResult') {
+                                       sh 'mvn clean install'
+                                   }
+                                   dir('enterBook/enterBook') {
+                                       sh 'mvn clean install'
+                                   }
+                                   dir('AnalyticsService/AnalyticsService') {
+                                       sh 'mvn clean install'
+                                   }
+                                   dir('authentication-service') {
+                                       sh 'mvn clean install'
+                                   }}
         }
 
         stage('Pull Database Images') {
