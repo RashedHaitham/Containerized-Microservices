@@ -15,8 +15,21 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                // Run Maven build
-                bat 'mvn clean install'
+               dir('ShowResult/BookResult') {
+                 bat 'mvn clean install'
+               }
+
+                dir('enterBook/enterBook') {
+                  bat 'mvn clean install'
+                }
+
+                dir('AnalyticsService/AnalyticsService') {
+                  bat 'mvn clean install'
+                }
+
+                dir('authentication-service') {
+                   bat 'mvn clean install'
+                }
             }
         }
 
