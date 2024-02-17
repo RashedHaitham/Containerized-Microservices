@@ -54,10 +54,10 @@ pipeline {
 
     post {
         always {
-           node {
+
               bat 'docker-compose -f docker-compose.yml down'
               bat 'docker system prune -f'
-           }
+
         }
     }
 }
