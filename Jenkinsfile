@@ -35,24 +35,34 @@ pipeline {
             }
         }
 
+
+        stage('Pull Database Images') {
+                    steps {
+                        sh 'docker-compose -f docker-compose.yml pull mongodb mysqldb'
+                    }
+        }
+
         stage('Build Docker Images') {
             steps {
-                 bat 'docker-compose -f docker-compose.yml build'
+                sh 'docker-compose -f docker-compose.yml build enterbook authenticationservice analytics-service show-result'
             }
         }
 
         stage('Deploy') {
             steps {
-                   bat 'docker-compose -f docker-compose.yml down'
-                bat 'docker-compose -f docker-compose.yml up -d'
-            }
+            // Check if the bookstoremicroservice container is running and stop it
+            sh 'docker stop bookstoremicroservice || true'
+            sh 'docker rm bookstoremicroservice || true'
+            // Proceed with deployment
+            sh 'docker-compose -f docker-compose.yml down'
+            sh 'docker-compose -f docker-compose.yml up -d'            }
         }
     }
 
     post {
         always {
-                bat 'docker-compose -f docker-compose.yml down'
-                bat 'docker system prune -f'
+            sh 'docker-compose -f docker-compose.yml down'
+            sh 'docker system prune -f --volumes'
         }
     }
 }
