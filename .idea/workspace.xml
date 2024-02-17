@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a6fd83e-97af-4cca-a251-01b1f07e2de9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnalyticsService/AnalyticsService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyticsService/AnalyticsService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowResult/BookResult/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowResult/BookResult/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enterBook/enterBook/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/enterBook/enterBook/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +274,7 @@
       <workItem from="1707937519115" duration="57000" />
       <workItem from="1707937615948" duration="48000" />
       <workItem from="1707937704703" duration="32000" />
-      <workItem from="1708158774314" duration="4049000" />
+      <workItem from="1708158774314" duration="5825000" />
     </task>
     <servers />
   </component>
