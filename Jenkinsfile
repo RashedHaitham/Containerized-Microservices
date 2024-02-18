@@ -40,12 +40,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            script {
-                bat 'docker-compose -f docker-compose.yml down'
-            }
-        }
-    }
 }
