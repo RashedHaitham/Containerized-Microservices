@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a6fd83e-97af-4cca-a251-01b1f07e2de9" name="Changes" comment="" />
+    <list default="true" id="7a6fd83e-97af-4cca-a251-01b1f07e2de9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enterBook/enterBook/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/enterBook/enterBook/src/main/resources/templates/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +116,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.show-result: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="AnalyticsService" />
@@ -224,8 +228,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.show-result: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.show-result: Compose Deployment" />
         <item itemvalue="Docker.enterBook/Dockerfile" />
         <item itemvalue="Docker.authentication-service/Dockerfile" />
         <item itemvalue="Docker.AnalyticsService/Dockerfile" />
@@ -267,7 +271,7 @@
       <workItem from="1707937519115" duration="57000" />
       <workItem from="1707937615948" duration="48000" />
       <workItem from="1707937704703" duration="32000" />
-      <workItem from="1708158774314" duration="15359000" />
+      <workItem from="1708158774314" duration="16716000" />
     </task>
     <servers />
   </component>
