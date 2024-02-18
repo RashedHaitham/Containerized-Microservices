@@ -44,7 +44,7 @@ pipeline {
       post {
             always {
                 script{
-                    bat "docker rmi $(docker images -f \"dangling=true\" -q)"
+                    bat "docker rmi $$(docker images -f \"dangling=true\" -q)"
                 }
             }
         }
