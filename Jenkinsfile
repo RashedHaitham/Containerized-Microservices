@@ -34,15 +34,22 @@ pipeline {
             }
         }
 
-        stage('Recreate Services') {
+        stage('Stop and Remove Services') {
             steps {
-                // Stop and remove only the specified services
+                // Explicitly stop the containers
                 bat 'docker-compose -f docker-compose.yml stop enterbook authenticationservice analytics-service show-result'
+                // Forcefully remove the containers
                 bat 'docker-compose -f docker-compose.yml rm -f enterbook authenticationservice analytics-service show-result'
-                // Recreate and start the services
-                bat 'docker-compose -f docker-compose.yml up -d enterbook authenticationservice analytics-service show-result'
             }
         }
+
+        stage('Recreate and Start Specific Services') {
+            steps {
+                // Recreate and start the services without their dependencies
+                bat 'docker-compose -f docker-compose.yml up -d --no-deps enterbook authenticationservice analytics-service show-result'
+            }
+        }
+
     }
 
     post {
