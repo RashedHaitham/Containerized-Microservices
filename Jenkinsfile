@@ -43,7 +43,7 @@ pipeline {
       post {
             always {
                 script{
-                    bat "docker image prune"
+                    bat "echo y | docker image prune"
                 }
             }
         }
