@@ -42,8 +42,8 @@ pipeline {
                     bat 'docker rm -f analytics-service || exit /b 0'
                     bat 'docker rm -f show-result || exit /b 0'
                     // Proceed to build and start only the specified services without dependencies
-                    bat 'docker-compose -f docker-compose.yml up -d --no-deps enterbook authenticationservice analytics-service show-result'
-
+                    bat 'docker-compose build'
+                    bat 'docker-compose up -d'
              }
         }
 
@@ -51,8 +51,6 @@ pipeline {
 
     post {
         always {
-            // Optional: Clean up resources. Use with caution if you have other Docker resources on the same host.
-            bat 'docker-compose -f docker-compose.yml down'
             bat 'docker system prune -f --volumes'
         }
     }

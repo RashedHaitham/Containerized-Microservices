@@ -114,7 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.enterbook: Compose Deployment">
     <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="AnalyticsService" />
@@ -155,14 +155,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnalyticsService/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="AnalyticsService/AnalyticsService/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -191,6 +183,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.enterbook: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="enterbook" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.show-result: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -213,7 +218,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.AnalyticsService/Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.enterbook: Compose Deployment" />
       <item itemvalue="Docker.authentication-service/Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.show-result: Compose Deployment" />
@@ -226,11 +231,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.enterbook: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.show-result: Compose Deployment" />
         <item itemvalue="Docker.enterBook/Dockerfile" />
         <item itemvalue="Docker.authentication-service/Dockerfile" />
-        <item itemvalue="Docker.AnalyticsService/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +274,7 @@
       <workItem from="1707937519115" duration="57000" />
       <workItem from="1707937615948" duration="48000" />
       <workItem from="1707937704703" duration="32000" />
-      <workItem from="1708158774314" duration="19100000" />
+      <workItem from="1708158774314" duration="20120000" />
     </task>
     <servers />
   </component>
