@@ -33,9 +33,8 @@ pipeline {
         stage('Build and Deploy') {
             steps {
                 script {
-                    bat 'docker-compose -f docker-compose.yml down' // Take down any existing containers
-                    bat 'docker-compose -f docker-compose.yml build' // Build the Docker images
-                    bat 'docker-compose -f docker-compose.yml up -d' // Run the containers in detached mode
+                    bat 'docker-compose -f docker-compose.yml build'
+                    bat 'docker-compose -f docker-compose.yml up -d'
                 }
             }
         }
