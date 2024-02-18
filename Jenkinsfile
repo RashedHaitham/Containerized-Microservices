@@ -50,8 +50,13 @@ pipeline {
 
         stage('Deploy') {
             steps {
-            bat 'docker-compose -f docker-compose.yml up -d enterbook authenticationservice analytics-service show-result'
-        }
+            // Stop and remove the current running containers for the services
+            bat 'docker-compose -f docker-compose.yml stop enterbook authenticationservice analytics-service show-result'
+            bat 'docker-compose -f docker-compose.yml rm -f enterbook authenticationservice analytics-service show-result'
+
+            // Start up the specific service containers without dependencies
+            bat 'docker-compose -f docker-compose.yml up -d --no-deps enterbook authenticationservice analytics-service show-result'
+           }
         }
     }
 
