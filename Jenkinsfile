@@ -43,19 +43,24 @@ pipeline {
 
         stage('Deploy') {
             steps {
-             // Stop and remove existing containers
-              bat 'docker-compose -f docker-compose.yml stop enterbook authenticationservice analytics-service show-result'
-              bat 'docker-compose -f docker-compose.yml rm -f enterbook authenticationservice analytics-service show-result'
-              // Build and run new containers without dependencies
-              bat 'docker-compose -f docker-compose.yml up -d --no-deps enterbook authenticationservice analytics-service show-result'
+             // Attempt to forcefully remove existing containers, and do not fail if they do not exist
+                     bat 'docker rm -f enterbook || exit /b 0'
+                     bat 'docker rm -f authenticationservice || exit /b 0'
+                     bat 'docker rm -f analytics-service || exit /b 0'
+                     bat 'docker rm -f show-result || exit /b 0'
+                     // Proceed to build and start only the specified services without dependencies
+                     bat 'docker-compose -f docker-compose.yml up -d --no-deps enterbook authenticationservice analytics-service show-result'
            }
         }
     }
 
     post {
         always {
+            // Stop and remove all services defined in the compose file
             bat 'docker-compose -f docker-compose.yml down'
-            bat 'docker system prune -f --volumes'
+            // Remove unused volumes associated with the compose file
+            bat 'docker volume prune -f --filter label=com.docker.compose.project=dockercompose'
+
         }
     }
 }
