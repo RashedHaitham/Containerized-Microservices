@@ -50,12 +50,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-             // Using PowerShell to ignore errors
-                    bat 'powershell -Command "docker stop bookstoremicroservice; if ($LASTEXITCODE -ne 0) { Write-Output \'Container stop command may have failed; ignoring.\' }"'
-                    bat 'powershell -Command "docker rm bookstoremicroservice; if ($LASTEXITCODE -ne 0) { Write-Output \'Container remove command may have failed; ignoring.\' }"'
-                    // Proceed with deployment
-                    bat 'docker-compose -f docker-compose.yml down'
-                    bat 'docker-compose -f docker-compose.yml up -d'          }
+            bat 'docker-compose -f docker-compose.yml up -d enterbook authenticationservice analytics-service show-result'
+        }
         }
     }
 
