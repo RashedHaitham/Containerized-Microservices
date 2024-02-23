@@ -15,7 +15,7 @@ public class AuthenticationService {
 
     @Autowired
     private UserRepository userRepository;
-    private static final String SECRET_KEY = "super secret key";
+    private static final String SECRET_KEY = "This is a secret";
     public boolean authenticateUser(String username, String password) {
         User user = userRepository.findByUsername(username);
         if (user == null) {

@@ -32,7 +32,7 @@ public class BookController {
     @PostMapping("/addBook")
     public String addVideoGame(Book book, RedirectAttributes redirectAttributes) {
         bookService.addBook(book);
-        analyticsService.notifyNewGameEntry();
+        analyticsService.notifyNewBookEntry();
         redirectAttributes.addFlashAttribute("success", "New Book has been added!");
         return "redirect:/addBook";
     }

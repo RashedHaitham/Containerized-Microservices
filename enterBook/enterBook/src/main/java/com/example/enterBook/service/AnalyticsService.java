@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class AnalyticsService {
-    public void notifyNewGameEntry() {
+    public void notifyNewBookEntry() {
         String url = "http://host.docker.internal:9000/updateAnalytics";
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
